@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Download, ArrowRight, MapPin } from "lucide-react";
-import { FiGithub, FiFacebook, FiLinkedin } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa6";
-
+import { Download, ArrowRight } from "lucide-react";
 import HeroImg from "./assets/My-Img2.png";
 import "../components/css/style.module.css";
 
@@ -40,7 +37,7 @@ function useTyping(words: string[], speed = 80, pause = 1600) {
           }
         }
       },
-      del ? speed / 2 : speed,
+      del ? speed / 2 : speed
     );
 
     return () => clearTimeout(t);
@@ -59,6 +56,7 @@ export default function Hero() {
     >
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-24 md:gap-16 items-center">
+          
           {/* LEFT SIDE */}
           <div>
             <motion.h1
@@ -87,7 +85,10 @@ export default function Hero() {
                 Download Resume
               </a>
 
-              <a href="#contact" className="border border-neon text-neon px-7 py-4 rounded-md">
+              <a
+                href="#contact"
+                className="border border-neon text-neon px-7 py-4 rounded-md"
+              >
                 Get in touch <ArrowRight className="inline ml-2" />
               </a>
             </motion.div>
@@ -95,6 +96,7 @@ export default function Hero() {
 
           {/* RIGHT SIDE */}
           <div className="relative flex justify-center items-center">
+            
             {/* Glow */}
             <div className="absolute w-[420px] h-[420px] bg-neon/20 blur-3xl rounded-full animate-pulse" />
 
@@ -110,7 +112,7 @@ export default function Hero() {
             {/* IMAGE */}
             <div className="relative z-20">
               <img
-                src={HeroImg.src || HeroImg}
+                src={HeroImg.src}
                 alt="Developer"
                 className="
                   w-[350px]
@@ -125,6 +127,7 @@ export default function Hero() {
               />
             </div>
           </div>
+
         </div>
       </div>
     </section>
