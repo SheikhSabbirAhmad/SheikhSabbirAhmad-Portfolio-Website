@@ -44,36 +44,28 @@ export default function About() {
             className="md:col-span-3 space-y-5 text-muted-foreground leading-relaxed text-base sm:text-lg"
           >
             <p>
-              I’m a passionate{" "}
-              <span className="text-neon">
-                MERN Stack Developer
-              </span>{" "}
-              focused on building modern, responsive, and user-friendly web
-              applications. I enjoy turning ideas into real-world digital
-              products using clean and efficient code.
+              I’m a passionate <span className="text-neon">MERN Stack Developer</span> focused on
+              building modern, responsive, and user-friendly web applications. I enjoy turning ideas
+              into real-world digital products using clean and efficient code.
             </p>
 
             <p>
               My core skills include{" "}
-              <span className="text-neon">
-                React.js, Next.js, MongoDB, Express.js, and Node.js
-              </span>
-              . I enjoy working on both frontend and backend, creating smooth
-              user experiences and functional systems.
+              <span className="text-neon">React.js, Next.js, MongoDB, Express.js, and Node.js</span>
+              . I enjoy working on both frontend and backend, creating smooth user experiences and
+              functional systems.
             </p>
 
             <p>
-              I am continuously building my skills through hands-on projects and
-              practice, focusing on developing scalable web applications and
-              improving performance. I enjoy solving real-world problems and
-              learning new technologies.
+              I am continuously building my skills through hands-on projects and practice, focusing
+              on developing scalable web applications and improving performance. I enjoy solving
+              real-world problems and learning new technologies.
             </p>
 
             <p>
-              My goal is to become a highly skilled developer by consistently
-              improving my{" "}
-              <span className="text-neon">development skills</span> and building
-              impactful digital solutions.
+              My goal is to become a highly skilled developer by consistently improving my{" "}
+              <span className="text-neon">development skills</span> and building impactful digital
+              solutions.
             </p>
           </motion.div>
 
@@ -95,17 +87,13 @@ export default function About() {
                     <t.icon size={18} className="text-neon" />
                   </span>
 
-                  <p className="font-mono text-xs text-neon uppercase tracking-wider">
-                    {t.period}
-                  </p>
+                  <p className="font-mono text-xs text-neon uppercase tracking-wider">{t.period}</p>
 
                   <h3 className="font-bold text-lg mt-1">{t.title}</h3>
 
                   <p className="text-sm text-muted-foreground">{t.org}</p>
 
-                  <p className="text-sm text-muted-foreground/80 mt-2">
-                    {t.desc}
-                  </p>
+                  <p className="text-sm text-muted-foreground/80 mt-2">{t.desc}</p>
                 </motion.div>
               ))}
             </div>

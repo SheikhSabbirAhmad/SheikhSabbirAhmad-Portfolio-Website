@@ -13,12 +13,7 @@ import {
   FaNodeJs,
 } from "react-icons/fa6";
 
-import {
-  SiNextdotjs,
-  SiTailwindcss,
-  SiMongodb,
-  SiFirebase,
-} from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiMongodb, SiFirebase } from "react-icons/si";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
@@ -41,12 +36,7 @@ const projects = [
 
     desc: "A full-stack doctor appointment booking platform that allows users to browse doctors, book appointments, and manage schedules with a smooth and user-friendly interface.",
 
-    features: [
-      "Responsive Design",
-      "Smooth Animations",
-      "Modern UI/UX",
-      "Interactive Sections",
-    ],
+    features: ["Responsive Design", "Smooth Animations", "Modern UI/UX", "Interactive Sections"],
 
     tech: [
       <SiNextdotjs key="next" />,
@@ -58,8 +48,7 @@ const projects = [
 
     live: "https://doc-appoint-doctor-appointment-mana.vercel.app",
 
-    github:
-      "https://github.com/SheikhSabbirAhmad/DocAppoint-Doctor-Appointment-Manager",
+    github: "https://github.com/SheikhSabbirAhmad/DocAppoint-Doctor-Appointment-Manager",
   },
 
   {
@@ -98,12 +87,7 @@ const projects = [
 
     desc: "An e-commerce web application for summer essential products, featuring a clean UI, product browsing, and a smooth shopping experience with a responsive and user-friendly design.",
 
-    features: [
-      "Product Listing",
-      "Cart System",
-      "Responsive Design",
-      "Modern UI",
-    ],
+    features: ["Product Listing", "Cart System", "Responsive Design", "Modern UI"],
 
     tech: [
       <SiNextdotjs key="next" />,
@@ -115,8 +99,7 @@ const projects = [
 
     live: "https://sun-cart-summer-essentials-store-xi.vercel.app",
 
-    github:
-      "https://github.com/SheikhSabbirAhmad/SunCart-Summer-Essentials-Store",
+    github: "https://github.com/SheikhSabbirAhmad/SunCart-Summer-Essentials-Store",
   },
 ];
 
@@ -153,9 +136,7 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <p className="text-neon font-mono uppercase tracking-[4px] text-sm">
-            Featured Work
-          </p>
+          <p className="text-neon font-mono uppercase tracking-[4px] text-sm">Featured Work</p>
 
           <h2 className="mt-3 text-4xl md:text-6xl font-bold text-white">
             My <span className="text-neon glow-text">Projects</span>
@@ -212,7 +193,6 @@ const Projects = () => {
                   className="group relative overflow-hidden rounded-3xl border border-neon/10 bg-white/[0.03] backdrop-blur-xl shadow-[0_0_30px_rgba(37,214,113,0.05)]"
                 >
                   <div className="grid lg:grid-cols-2 items-center">
-
                     {/* IMAGE (LOCAL FIXED 1st + 3rd) */}
                     <div className="relative overflow-hidden h-full flex items-center justify-center">
                       <Image
@@ -242,13 +222,9 @@ const Projects = () => {
                         {project.category}
                       </p>
 
-                      <h2 className="mt-4 text-4xl font-bold text-white">
-                        {project.title}
-                      </h2>
+                      <h2 className="mt-4 text-4xl font-bold text-white">{project.title}</h2>
 
-                      <p className="mt-5 text-muted-foreground leading-relaxed">
-                        {project.desc}
-                      </p>
+                      <p className="mt-5 text-muted-foreground leading-relaxed">{project.desc}</p>
 
                       <div className="mt-8 space-y-3">
                         {project.features.map((feature, i) => (
@@ -283,7 +259,6 @@ const Projects = () => {
                         </a>
                       </div>
                     </div>
-
                   </div>
                 </motion.div>
               </SwiperSlide>
